@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="img" style="width:{{ width }}px; height:{{height}}px" catchtouchstart="touchstartCallback"  catchtouchmove="touchmoveCallback" catchtouchend="touchendCallback"  >
+    <image style="transform: translate({{stv.offsetX}}px, {{stv.offsetY}}px) scale({{stv.scale}}) rotate({{ stv.rotate }}deg);width:{{originImg.width}}px; height: {{originImg.height}}px" src="{{ originImg.url }}"></image>
+  </view>
+  <view class='footer'>
+      <view bindtap='uploadTap'>重新选择</view> 
+      <view bindtap='rotate'>旋转</view>
+      <view bindtap='cropperImg'>确定裁剪</view>
+  </view>
+  <canvas class='imgcrop' style="width:{{ width * 2 }}px;height:{{ height * 2}}px;" canvas-id='imgcrop'></canvas>
+</view>

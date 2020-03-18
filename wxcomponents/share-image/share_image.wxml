@@ -1,0 +1,8 @@
+<wxs src="./mixins/wxs/proxy.wxs" module="proxywxs" />
+<view class="share-box">
+  <canvas canvas-id='image' style='width:{{canvasData.width}}px;height:{{canvasData.height}}px;position: absolute;left: -55555px;top: -55555px;'></canvas>
+  <view class="share-btn">
+    <button class="main-btn" catchtap="saveImage">保存</button>
+    <button class="main-btn" catchtap="cancelImage">取消</button>
+  </view>
+</view>
